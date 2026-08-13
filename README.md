@@ -335,3 +335,35 @@ Future Enhancements
 ```
 
 This will look much cleaner on the GitHub repository page.
+
+## Screenshots
+
+### Payment Form
+
+The payment form collects customer details and allows the user to enter a dynamic payment amount before starting the PayPal Sandbox checkout.
+
+![Payment Form](screenshots/payment-form.png)
+
+---
+
+### Payment Successful
+
+After the PayPal Sandbox buyer approves the payment, the application captures the order and displays the payment status, Order ID, Capture ID, customer details, and payment amount.
+
+![Payment Successful](screenshots/payment-success.png)
+
+---
+
+### Refund Successful
+
+A completed payment can be fully refunded. After a successful refund, the application displays the Refund ID, refund status, and refunded amount.
+
+![Refund Successful](screenshots/refund-success.png)
+
+---
+
+### Transaction History
+
+Transaction history is loaded from MySQL through the Spring Boot backend. It displays payment and refund statuses for previous transactions and allows eligible payments to be refunded from history.
+
+![Transaction History](screenshots/transaction-history.png)
